@@ -7,16 +7,25 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background-color: #f9f9f7;
+      background-color: #f6f6f4;
       color: #222;
     }
 
-    .container {
+    .hero {
+      min-height: 100vh;
+      background-image: url("imagem.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 3rem 2rem;
       max-width: 720px;
-      margin: 20vh auto;
-      padding: 0 24px;
+      margin: 0 auto;
     }
 
     p {
@@ -26,27 +35,29 @@
     }
 
     .assinatura {
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <p>
-      Existe um lugar entre o presente e o eterno.
-    </p>
+  <section class="hero">
+    <div class="overlay">
+      <p>
+        Existe um lugar entre o presente e o eterno.
+      </p>
 
-    <p>
-      Este site não explica.<br>
-      Ele permanece.
-    </p>
+      <p>
+        Este site não explica.<br>
+        Ele permanece.
+      </p>
 
-    <div class="assinatura">
-      Entre o presente e o eterno
+      <div class="assinatura">
+        Entre o presente e o eterno
+      </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>
