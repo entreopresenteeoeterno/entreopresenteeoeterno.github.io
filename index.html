@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -6,15 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
       min-height: 100vh;
       background: url("Imagem.png") no-repeat center center fixed;
       background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Georgia, serif;
       color: #2e2a26;
     }
 
@@ -23,27 +28,51 @@
       padding: 32px;
       max-width: 420px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: left;
     }
 
     .card p {
       margin-bottom: 14px;
       line-height: 1.6;
+      font-size: 1rem;
     }
 
-    a {
+    .link {
+      display: inline-block;
+      margin-top: 12px;
       text-decoration: none;
       color: #6b5b2a;
       border-bottom: 1px solid #6b5b2a;
+      padding-bottom: 2px;
+    }
+
+    .link:hover {
+      opacity: 0.7;
+    }
+
+    .flor {
+      display: block;
+      margin: 22px auto 0 auto;
+      max-width: 60px;
+      opacity: 0.75;
     }
   </style>
 </head>
 
 <body>
+
   <div class="card">
     <p>Existe um lugar entre o presente e o eterno.</p>
     <p>Este site não explica.<br>Ele permanece.</p>
 
-    <a href="Livros.html">Conhecer o livro</a>
+    <a href="Livros.html" class="link">Conhecer o livro</a>
+
+    <img
+      src="Flor.png"
+      alt=""
+      class="flor"
+    />
   </div>
+
 </body>
 </html>
