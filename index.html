@@ -1,81 +1,64 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Entre o presente e o eterno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Georgia, "Times New Roman", serif;
-      background-color: #f6f4ef;
-      color: #222;
     }
 
-    .hero {
+    body {
       min-height: 100vh;
-      background-image: url("Imagem.png");
+      background: url("Imagem.png") no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      color: #2e2a26;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 2.5rem;
-      max-width: 520px;
+      background: rgba(250, 248, 242, 0.9);
+      padding: 32px;
+      max-width: 420px;
+      text-align: left;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
     .card p {
+      margin-bottom: 14px;
       line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    .actions {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
     }
 
     .link {
+      display: inline-block;
+      margin-top: 10px;
       text-decoration: none;
-      background: #e3c97a; /* paleta do livro */
-      color: #222;
-      padding: 0.6rem 1.2rem;
-      font-size: 0.95rem;
+      color: #6b5b2a;
+      border-bottom: 1px solid #6b5b2a;
+      padding-bottom: 2px;
     }
 
     .link:hover {
-      background: #d6b864;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="hero">
-    <div class="card">
-      <p>Existe um lugar entre o presente e o eterno.</p>
-      <p>Este site não explica.<br>Ele permanece.</p>
+  <div class="card">
+    <p>Existe um lugar entre o presente e o eterno.</p>
+    <p>Este site não explica.<br>Ele permanece.</p>
 
-      <div class="actions">
-        <!-- PÁGINA DO LIVRO NO SITE -->
-        <a class="link" href="https://entreopresenteeoeterno.github.io/Livros.html">
-          Acessar o livro
-        </a>
-
-        <!-- AMAZON -->
-        <a class="link" href="https://a.co/d/47yy9Dc" target="_blank">
-          Comprar na Amazon
-        </a>
-      </div>
-    </div>
+    <a href="livros.html" class="link">Livros</a>
   </div>
 
 </body>
-</html>
+</html>  
