@@ -1,8 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>O livro — Entre o presente e o eterno</title>
+  <meta charset="UTF-8" />
+  <title>Entre o presente e o eterno</title>
 
   <style>
     body {
@@ -10,112 +10,72 @@
       font-family: Georgia, "Times New Roman", serif;
       background-color: #f6f4ef;
       color: #222;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background-image: url("Imagem.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2.5rem;
+      max-width: 520px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .card p {
       line-height: 1.6;
+      margin-bottom: 1rem;
     }
 
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
+    .actions {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
-    .intro {
-      margin-bottom: 3rem;
-      font-size: 1.05rem;
-    }
-
-    .book-card {
-      background: linear-gradient(
-        to bottom,
-        #f3e6bf,
-        #e6c97a
-      );
-      padding: 3rem 2.5rem;
-      border-radius: 2px;
-      margin-bottom: 3rem;
-    }
-
-    .book-card h1 {
-      font-size: 1.6rem;
-      margin-top: 0;
-    }
-
-    .book-card p {
-      margin-bottom: 1.2rem;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background-color: #ffffff;
+    .link {
+      text-decoration: none;
+      background: #e3c97a; /* paleta do livro */
       color: #222;
-      text-decoration: none;
+      padding: 0.6rem 1.2rem;
       font-size: 0.95rem;
-      border: 1px solid #ddd;
     }
 
-    .button:hover {
-      background-color: #f0f0f0;
-    }
-
-    .back {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    .back a {
-      color: #555;
-      text-decoration: none;
-    }
-
-    .back a:hover {
-      text-decoration: underline;
+    .link:hover {
+      background: #d6b864;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="hero">
+    <div class="card">
+      <p>Existe um lugar entre o presente e o eterno.</p>
+      <p>Este site não explica.<br>Ele permanece.</p>
 
-    <div class="intro">
-      <p>
-        Este livro nasceu do mesmo lugar que este site.<br>
-        Ele não ensina.<br>
-        Ele oferece um lugar para ficar.
-      </p>
+      <div class="actions">
+        <!-- PÁGINA DO LIVRO NO SITE -->
+        <a class="link" href="https://entreopresenteeoeterno.github.io/Livros.html">
+          Acessar o livro
+        </a>
+
+        <!-- AMAZON -->
+        <a class="link" href="https://a.co/d/47yy9Dc" target="_blank">
+          Comprar na Amazon
+        </a>
+      </div>
     </div>
-
-    <div class="book-card">
-      <h1>O lugar que existe entre o presente e o eterno</h1>
-
-      <p>
-        Um livro para quem não busca respostas,<br>
-        mas um ponto de repouso<br>
-        entre o agora<br>
-        e o que não pede nome.
-      </p>
-
-      <p>
-        Disponível em formato físico e digital.
-      </p>
-
-      <a
-        class="button"
-        href="https://a.co/d/47yy9Dc"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Comprar na Amazon
-      </a>
-    </div>
-
-    <div class="back">
-      <a href="index.html">Voltar ao lugar</a>
-    </div>
-
   </div>
 
 </body>
-</html>   
+</html>
