@@ -2,118 +2,105 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Livros — Entre o presente e o eterno</title>
+  <title>O lugar que existe entre o presente e o eterno</title>
 
   <style>
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background-color: #caa24d; /* paleta do livro */
-      color: #2a2a2a;
-    }
-
-    .hero {
-      min-height: 100vh;
-      background-image: url("Imagem.png");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.85);
-      max-width: 680px;
-      padding: 3rem 2.5rem;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    }
-
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 1.5rem;
-      font-weight: normal;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      font-weight: normal;
-    }
-
-    p {
+      background-color: #f6f4ee;
+      color: #2b2b2b;
       line-height: 1.6;
-      margin-bottom: 1rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h1, h2 {
+      font-weight: normal;
+    }
+
+    .intro {
+      margin-bottom: 3rem;
     }
 
     .book {
-      margin-top: 2rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #d6b45a;
+      padding: 2.5rem;
+      background: linear-gradient(
+        to bottom,
+        #f4f1ea,
+        #e6c46a
+      );
+      margin-bottom: 3rem;
+    }
+
+    .book p {
+      margin-bottom: 1.2rem;
     }
 
     .link {
       display: inline-block;
-      margin-top: 1.2rem;
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.2rem;
       text-decoration: none;
-      color: #8a6a1f;
-      border-bottom: 1px solid #8a6a1f;
+      color: #2b2b2b;
+      background-color: rgba(255,255,255,0.6);
+      border-radius: 2px;
+    }
+
+    .link:hover {
+      background-color: rgba(255,255,255,0.85);
     }
 
     .support {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(0,0,0,0.1);
     }
   </style>
 </head>
 
 <body>
-  <section class="hero">
-    <div class="card">
-      <h1>Livros</h1>
+  <div class="container">
 
-      <p>
-        Alguns textos não pedem pressa.<br>
-        Eles não pedem explicação.<br>
-        Pedem permanência.
-      </p>
-
+    <div class="intro">
       <p>
         Este livro nasceu do mesmo lugar que este site.<br>
         Não para ensinar,<br>
         mas para oferecer um espaço onde é possível ficar.
       </p>
-
-      <div class="book">
-        <h2>O lugar que existe entre o presente e o eterno</h2>
-
-        <p>
-          Um livro para quem não busca respostas,<br>
-          mas um ponto de repouso entre o agora e o que não passa.
-        </p>
-
-        <p>Disponível em formato físico e digital.</p>
-
-        <a class="link" href="https://a.co/d/47yy9Dc" target="_blank">
-          Encontrar o livro
-        </a>
-      </div>
-
-      <div class="support">
-        <p>
-          Este lugar se sustenta porque algumas pessoas escolhem apoiá-lo.<br>
-          Se fizer sentido para você, isso também é uma forma de permanência.
-        </p>
-
-        <a class="link" href="jobafe.jbf@gmail.com" target="_blank">
-          Apoiar
-        </a>
-      </div>
-
     </div>
-  </section>
+
+    <div class="book">
+      <h2>O lugar que existe entre o presente e o eterno</h2>
+
+      <p>
+        Um livro para quem não busca respostas,<br>
+        mas um ponto de repouso entre o agora e o que não pede nome.
+      </p>
+
+      <p>Disponível em formato físico e digital.</p>
+
+      <a class="link" href="https://a.co/d/47yy9Dc" target="_blank">
+        Encontrar o livro
+      </a>
+    </div>
+
+    <div class="support">
+      <p>
+        Este lugar se sustenta porque algumas pessoas escolhem apoiá-lo.<br>
+        Se fizer sentido para você, isso também é uma forma de presença.
+      </p>
+
+      <a class="link" href="mailto:jobafe.jbf@gmail.com">
+        Apoiar
+      </a>
+    </div>
+
+  </div>
 </body>
 </html>
