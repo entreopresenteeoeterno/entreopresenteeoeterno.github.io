@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,6 @@
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      background-color: #f4f1ea;
-      color: #2b2b2b;
     }
 
     .hero {
@@ -18,98 +16,41 @@
       background-size: cover;
       background-position: center;
       display: flex;
-      align-items: flex-start;
-
-      /* paleta do livro agindo na imagem */
-      background-color: #e6c46a;
-      background-blend-mode: multiply;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
     }
 
-    /* CARTÃO */
     .card {
-      background: rgba(244, 241, 234, 0.68);
-      backdrop-filter: blur(1.5px);
-
-      padding: 3rem 2.5rem 2.2rem 2.5rem;
+      background: rgba(255,255,255,0.85);
       max-width: 640px;
-
-      margin-left: 10%;
-      margin-top: 18vh;
-
-      box-shadow: none;
-      position: relative;
+      padding: 2.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
 
-    /* PALETA DO LIVRO — como matéria */
-    .palette {
-  display: flex;
-  height: 3px;
-  width: 100%;
-  margin-bottom: 1.8rem;
-  opacity: 0.45;
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
     }
 
-    .palette span {
-      flex: 1;
-    }
-
-    .p-areia   { background: #f4f1ea; }
-    .p-ouro    { background: #e6c46a; }
-    .p-ocre    { background: #a97c1f; }
-    .p-musgo   { background: #6b7f6a; }
-    .p-sombra  { background: #2b2b2b; }
-
-    .card p {
-      font-size: 1.25rem;
-      line-height: 1.9;
-      color: #2b2b2b;
-      margin: 0;
-    }
-
-    .signature {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #7a6a3a;
-      opacity: 0.6;
-    }
-
-    @media (max-width: 768px) {
-      .card {
-        margin-left: 8%;
-        margin-right: 8%;
-        margin-top: 15vh;
-        padding: 2.5rem 2rem 2rem 2rem;
-      }
+    .link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #8a6a1f;
+      text-decoration: none;
+      border-bottom: 1px solid #8a6a1f;
     }
   </style>
 </head>
 
 <body>
-
-  <div class="hero">
+  <section class="hero">
     <div class="card">
+      <p>Existe um lugar entre o presente e o eterno.</p>
+      <p>Este site não explica.<br>Ele permanece.</p>
 
-      <!-- PALETA DO LIVRO -->
-      <div class="palette">
-        <span class="p-areia"></span>
-        <span class="p-ouro"></span>
-        <span class="p-ocre"></span>
-        <span class="p-musgo"></span>
-        <span class="p-sombra"></span>
-      </div>
-
-      <p>
-        Existe um lugar entre o presente e o eterno.<br><br>
-        Este site não explica.<br>
-        Ele permanece.
-      </p>
-
-      <div class="signature">
-        Entre o presente e o eterno
-      </div>
-
+      <a class="link" href="livros.html">Livros</a>
     </div>
-  </div>
-
+  </section>
 </body>
-</html>
+</html>  
