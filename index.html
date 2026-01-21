@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -71,6 +71,12 @@
       opacity: 0.7;
     }
 
+    .music .hint {
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 4px;
+    }
+
     .player {
       margin-top: 14px;
       display: none;
@@ -87,7 +93,7 @@
   <script>
     function tocarMusica() {
       const player = document.getElementById("spotify-player");
-      if (player.style.display === "none") {
+      if (player.style.display === "none" || player.style.display === "") {
         player.style.display = "block";
       } else {
         player.style.display = "none";
@@ -108,8 +114,32 @@
       <p>Se quiser, uma música acompanha este lugar.</p>
 
       <button onclick="tocarMusica()">
-        Ouvir a música
+        Ouvir a música aqui
       </button>
+
+      <div class="hint">
+        A música começa ao clicar no ▶ dentro do player.
+      </div>
 
       <div class="player" id="spotify-player">
         <iframe
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/7Ibl1530yAw2HICNzToxJH?utm_source=generator"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <img
+      src="Flor.png"
+      alt=""
+      class="flor"
+    />
+  </div>
+
+</body>
+</html>  
