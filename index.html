@@ -1,145 +1,96 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Entre o presente e o eterno</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Georgia, "Times New Roman", serif;
     }
 
     body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #f6f4ee;
+      color: #2a2a2a;
+    }
+
+    .hero {
       min-height: 100vh;
-      background: url("Imagem.png") no-repeat center center fixed;
+      background-image: url("Imagem.png"); /* imagem da floresta */
       background-size: cover;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #2e2a26;
+      padding: 20px;
     }
 
     .card {
-      background: rgba(250, 248, 242, 0.9);
-      padding: 32px;
-      max-width: 420px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px 36px;
+      max-width: 520px;
+      text-align: left;
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
     .card p {
-      margin-bottom: 14px;
+      font-size: 18px;
       line-height: 1.6;
-      font-size: 1rem;
+      margin-bottom: 14px;
     }
 
-    .link {
+    .card a {
       display: inline-block;
-      margin-top: 12px;
-      text-decoration: none;
-      color: #6b5b2a;
-      border-bottom: 1px solid #6b5b2a;
-      padding-bottom: 2px;
-    }
-
-    .link:hover {
-      opacity: 0.7;
-    }
-
-    .music {
-      margin-top: 18px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .music button {
-      background: none;
-      border: none;
-      padding: 0;
-      margin-top: 6px;
-      font-size: 0.95rem;
-      font-family: inherit;
-      color: #555;
-      border-bottom: 1px solid #555;
-      cursor: pointer;
-    }
-
-    .music button:hover {
-      opacity: 0.7;
-    }
-
-    .music .hint {
-      font-size: 0.8rem;
-      color: #777;
-      margin-top: 4px;
-    }
-
-    .player {
       margin-top: 14px;
-      display: none;
+      font-size: 16px;
+      color: #8a6b2e; /* dourado suave */
+      text-decoration: none;
+      border-bottom: 1px solid rgba(138,107,46,0.4);
     }
 
-    .flor {
-      display: block;
-      margin: 22px auto 0 auto;
-      max-width: 60px;
-      opacity: 0.75;
+    .card a:hover {
+      border-bottom-color: #8a6b2e;
     }
-  </style>
 
-  <script>
-    function tocarMusica() {
-      const player = document.getElementById("spotify-player");
-      if (player.style.display === "none" || player.style.display === "") {
-        player.style.display = "block";
-      } else {
-        player.style.display = "none";
+    /* Cruz discreta */
+    .cruz-discreta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 42px;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 28px 24px;
+      }
+
+      .card p {
+        font-size: 16px;
       }
     }
-  </script>
+  </style>
 </head>
 
 <body>
 
-  <div class="card">
-    <p>Existe um lugar entre o presente e o eterno.</p>
-    <p>Este site não explica.<br>Ele permanece.</p>
+  <section class="hero">
+    <div class="card">
+      <p>Existe um lugar entre o presente e o eterno.</p>
+      <p>Este site não explica.</p>
+      <p>Ele permanece.</p>
 
-    <a href="Livros.html" class="link">Conhecer o livro</a>
-
-    <div class="music">
-      <p>Se quiser, uma música acompanha este lugar.</p>
-
-      <button onclick="tocarMusica()">
-        Ouvir a música aqui
-      </button>
-
-      <div class="hint">
-        A música começa ao clicar no ▶ dentro do player.
-      </div>
-
-      <div class="player" id="spotify-player">
-        <iframe
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/track/7Ibl1530yAw2HICNzToxJH?utm_source=generator"
-          width="100%"
-          height="152"
-          frameborder="0"
-          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
+      <a href="Livros.html">Livros</a>
     </div>
+  </section>
 
-    <img
-      src="Flor.png"
-      alt=""
-      class="flor"
-    />
-  </div>
+  <!-- Cruz dourada discreta -->
+  <img src="cruz.png" alt="Cruz dourada" class="cruz-discreta">
 
 </body>
-</html>  
+</html>
