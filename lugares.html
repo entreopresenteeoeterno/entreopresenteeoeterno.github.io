@@ -134,21 +134,36 @@
       >
         Ver na Amazon
       </a>
-    </div>
+<div id="pix" class="pix-box">
+  <p style="margin-bottom:8px;">
+    Este espaço é sustentado por quem passa por ele.
+  </p>
 
-    <!-- Apoio com Pix -->
-    <div class="place">
-      <a class="link" onclick="abrirPix()">Apoiar este espaço</a>
+  <p style="margin-bottom:10px;">
+    Pix: <strong id="pix-chave">jobafe.jbf@gmail.com</strong>
+  </p>
 
-      <div id="pix" class="pix-box">
-        <p style="margin-bottom:8px;">
-          Este espaço é sustentado por quem passa por ele.
-        </p>
-        <p>
-          Pix: <strong>jobafe.jbf@gmail.com</strong>
-        </p>
-      </div>
-    </div>
+  <button onclick="copiarPix()" style="
+    background:none;
+    border:none;
+    font-family:inherit;
+    color:#6b5b2a;
+    border-bottom:1px solid #6b5b2a;
+    cursor:pointer;
+    font-size:0.9rem;
+  ">
+    Copiar Pix
+  </button>
+
+  <p id="pix-msg" style="
+    display:none;
+    margin-top:8px;
+    font-size:0.8rem;
+    color:#777;
+  ">
+    Pix copiado
+  </p>
+</div>
 
     <!-- Música -->
     <div class="music">
