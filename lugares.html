@@ -6,14 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
       min-height: 100vh;
       background: #f6f4ef;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Georgia, "Times New Roman", serif;
       color: #2e2a26;
     }
 
@@ -24,13 +29,13 @@
     }
 
     .place {
-      margin-bottom: 48px;
+      margin-bottom: 44px;
     }
 
     .place img {
       max-width: 220px;
       margin-bottom: 16px;
-      opacity: 0.95;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
     }
 
     .place p {
@@ -38,16 +43,26 @@
       line-height: 1.6;
     }
 
-    .place a {
+    .link {
       display: inline-block;
       text-decoration: none;
       color: #6b5b2a;
       border-bottom: 1px solid #6b5b2a;
       padding-bottom: 2px;
+      cursor: pointer;
     }
 
-    .place a:hover {
+    .link:hover {
       opacity: 0.7;
+    }
+
+    .pix-box {
+      display: none;
+      margin-top: 14px;
+      padding: 14px;
+      background: #efece5;
+      font-size: 0.9rem;
+      color: #555;
     }
 
     .music {
@@ -82,6 +97,11 @@
       const p = document.getElementById("player");
       p.style.display = p.style.display === "block" ? "none" : "block";
     }
+
+    function abrirPix() {
+      const box = document.getElementById("pix");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
   </script>
 </head>
 
@@ -91,28 +111,45 @@
 
     <!-- Fragmentos de Vigília -->
     <div class="place">
-      <img src="fragmentos-de-vigilia.png" alt="">
-      <p><strong>Fragmentos de vigília</strong><br>
-      Textos entre o presente e o eterno</p>
-      <a href="fragmentos-de-vigilia.pdf" download>Baixar o PDF</a>
+      <img src="fragmentos-de-vigilia.png" alt="Fragmentos de vigília">
+      <p>
+        <strong>Fragmentos de vigília</strong><br>
+        Textos entre o presente e o eterno
+      </p>
+      <a href="fragmentos-de-vigilia.pdf" class="link" download>
+        Baixar o PDF
+      </a>
     </div>
 
-    <!-- O outro livro -->
+    <!-- Livro principal -->
     <div class="place">
-      <img src="Capa.png" alt="">
-      <p><strong>O lugar que existe entre o presente e o eterno</strong></p>
-      <a href="https://a.co/d/3nma5CZ" target="_blank">
+      <img src="Capa.png" alt="O lugar que existe entre o presente e o eterno">
+      <p>
+        <strong>O lugar que existe entre o presente e o eterno</strong>
+      </p>
+      <a
+        href="COLE_AQUI_O_LINK_DA_AMAZON"
+        target="_blank"
+        class="link"
+      >
         Ver na Amazon
       </a>
     </div>
-<div class="place">
-  <p>
-    Este espaço existe porque é sustentado.<br>
-    Se fizer sentido, você pode apoiar.
-  </p>
 
-  <a href="#" class="link" onclick="abrirPix(jobafe.jbf@gmail.com)">Apoiar este espaço</a>
-</div>
+    <!-- Apoio com Pix -->
+    <div class="place">
+      <a class="link" onclick="abrirPix()">Apoiar este espaço</a>
+
+      <div id="pix" class="pix-box">
+        <p style="margin-bottom:8px;">
+          Este espaço é sustentado por quem passa por ele.
+        </p>
+        <p>
+          Pix: <strong>jobafe.jbf@gmail.com</strong>
+        </p>
+      </div>
+    </div>
+
     <!-- Música -->
     <div class="music">
       <p>Se quiser, uma música pode acompanhar.</p>
