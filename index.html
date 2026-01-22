@@ -49,115 +49,19 @@
       opacity: 0.7;
     }
 
-    .download {
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #444;
-      border-bottom: 1px solid #444;
-      padding-bottom: 2px;
-      font-size: 0.95rem;
-    }
+    /* ---- PDF ---- */
 
-    .download:hover {
-      opacity: 0.7;
-    }
-
-    .music {
-      margin-top: 18px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .music button {
-      background: none;
-      border: none;
-      padding: 0;
-      margin-top: 6px;
-      font-size: 0.95rem;
-      font-family: inherit;
-      color: #555;
-      border-bottom: 1px solid #555;
-      cursor: pointer;
-    }
-
-    .music button:hover {
-      opacity: 0.7;
-    }
-
-    .music .hint {
-      font-size: 0.8rem;
-      color: #777;
-      margin-top: 4px;
-    }
-
-    .player {
-      margin-top: 14px;
-      display: none;
-    }
-
-    .flor {
+    .capa-pdf {
       display: block;
-      margin: 22px auto 0 auto;
-      max-width: 60px;
-      opacity: 0.75;
+      margin: 22px auto 6px auto;
+      max-width: 160px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
-  </style>
 
-  <script>
-    function tocarMusica() {
-      const player = document.getElementById("spotify-player");
-      if (player.style.display === "none" || player.style.display === "") {
-        player.style.display = "block";
-      } else {
-        player.style.display = "none";
-      }
+    .capa-pdf:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
     }
-  </script>
-</head>
 
-<body>
-
-  <div class="card">
-    <p>Existe um lugar entre o presente e o eterno.</p>
-    <p>Este site não explica.<br>Ele permanece.</p>
-
-    <a href="Livros.html" class="link">Conhecer o livro</a><br>
-
-    <a href="fragmentos-de-vigilia.pdf" download class="download">
-      Baixar o PDF
-    </a>
-
-    <div class="music">
-      <p>Se quiser, uma música acompanha este lugar.</p>
-
-      <button onclick="tocarMusica()">
-        Ouvir a música aqui
-      </button>
-
-      <div class="hint">
-        A música começa ao clicar no ▶ dentro do player.
-      </div>
-
-      <div class="player" id="spotify-player">
-        <iframe
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/track/7Ibl1530yAw2HICNzToxJH?utm_source=generator"
-          width="100%"
-          height="152"
-          frameborder="0"
-          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-
-    <img
-      src="Flor.png"
-      alt=""
-      class="flor"
-    />
-  </div>
-
-</body>
-</html>
+    .pdf
