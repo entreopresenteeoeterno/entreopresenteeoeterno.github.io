@@ -57,7 +57,7 @@
       opacity: 0.7;
     }
 
-    .pix-box {
+    .reveal-box {
       display: none;
       margin-top: 14px;
       padding: 14px;
@@ -66,7 +66,7 @@
       color: #555;
     }
 
-    .pix-btn {
+    .action-btn {
       margin-top: 6px;
       background: none;
       border: none;
@@ -77,7 +77,7 @@
       font-size: 0.9rem;
     }
 
-    .pix-msg {
+    .msg {
       display: none;
       margin-top: 8px;
       font-size: 0.8rem;
@@ -125,13 +125,22 @@
     function copiarPix() {
       const texto = document.getElementById("pix-chave").innerText;
       navigator.clipboard.writeText(texto);
-
       const msg = document.getElementById("pix-msg");
       msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    }
 
-      setTimeout(() => {
-        msg.style.display = "none";
-      }, 2000);
+    function abrirEncontros() {
+      const box = document.getElementById("encontros");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+
+    function copiarContato() {
+      const texto = document.getElementById("contato").innerText;
+      navigator.clipboard.writeText(texto);
+      const msg = document.getElementById("contato-msg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
     }
   </script>
 </head>
@@ -158,32 +167,63 @@
       <p>
         <strong>O lugar que existe entre o presente e o eterno</strong>
       </p>
-      <a
-        href="https://a.co/d/3nma5CZ"
-        target="_blank"
-        class="link"
-      >
+      <a href="COLE_AQUI_O_LINK_DA_AMAZON" target="_blank" class="link">
         Ver na Amazon
       </a>
+    </div>
+
+    <!-- Encontros -->
+    <div class="place">
+      <p><strong>Encontros</strong></p>
+
+      <p>
+        Às vezes, o livro pede presença.<br>
+        Um espaço de escuta, silêncio e partilha.
+      </p>
+
+      <p>
+        Não é terapia.<br>
+        Não é religião.<br>
+        É um lugar para estar.
+      </p>
+
+      <p>
+        Os encontros acontecem de forma simples,<br>
+        em pequenos grupos,<br>
+        quando há pedido e possibilidade.
+      </p>
+
+      <a class="link" onclick="abrirEncontros()">Manifestar interesse</a>
+
+      <div id="encontros" class="reveal-box">
+        <p style="margin-bottom:10px;">
+          Contato:
+          <strong id="contato">jobafe.jbf@gmail.com</strong>
+        </p>
+
+        <button class="action-btn" onclick="copiarContato()">
+          Copiar contato
+        </button>
+
+        <p id="contato-msg" class="msg">Contato copiado</p>
+      </div>
     </div>
 
     <!-- Apoio com Pix -->
     <div class="place">
       <a class="link" onclick="abrirPix()">Apoiar este espaço</a>
 
-      <div id="pix" class="pix-box">
+      <div id="pix" class="reveal-box">
         <p style="margin-bottom:8px;">
-          Este espaço existe porque é sustentado. Se fizer sentido pra você.
-        </p>
+          Este espaço é sustentado por quem passa por ele.
         </p>
 
         <p style="margin-bottom:10px;">
           Pix: <strong id="pix-chave">jobafe.jbf@gmail.com</strong>
         </p>
 
-        <button class="pix-btn" onclick="copiarPix()">Copiar Pix</button>
-
-        <p id="pix-msg" class="pix-msg">Pix copiado</p>
+        <button class="action-btn" onclick="copiarPix()">Copiar Pix</button>
+        <p id="pix-msg" class="msg">Pix copiado</p>
       </div>
     </div>
 
