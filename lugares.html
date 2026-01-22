@@ -50,6 +50,7 @@
       border-bottom: 1px solid #6b5b2a;
       padding-bottom: 2px;
       cursor: pointer;
+      background: none;
     }
 
     .link:hover {
@@ -63,6 +64,24 @@
       background: #efece5;
       font-size: 0.9rem;
       color: #555;
+    }
+
+    .pix-btn {
+      margin-top: 6px;
+      background: none;
+      border: none;
+      font-family: inherit;
+      color: #6b5b2a;
+      border-bottom: 1px solid #6b5b2a;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .pix-msg {
+      display: none;
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: #777;
     }
 
     .music {
@@ -102,6 +121,18 @@
       const box = document.getElementById("pix");
       box.style.display = box.style.display === "block" ? "none" : "block";
     }
+
+    function copiarPix() {
+      const texto = document.getElementById("pix-chave").innerText;
+      navigator.clipboard.writeText(texto);
+
+      const msg = document.getElementById("pix-msg");
+      msg.style.display = "block";
+
+      setTimeout(() => {
+        msg.style.display = "none";
+      }, 2000);
+    }
   </script>
 </head>
 
@@ -134,36 +165,26 @@
       >
         Ver na Amazon
       </a>
-<div id="pix" class="pix-box">
-  <p style="margin-bottom:8px;">
-    Este espaço é sustentado por quem passa por ele.
-  </p>
+    </div>
 
-  <p style="margin-bottom:10px;">
-    Pix: <strong id="pix-chave">jobafe.jbf@gmail.com</strong>
-  </p>
+    <!-- Apoio com Pix -->
+    <div class="place">
+      <a class="link" onclick="abrirPix()">Apoiar este espaço</a>
 
-  <button onclick="copiarPix()" style="
-    background:none;
-    border:none;
-    font-family:inherit;
-    color:#6b5b2a;
-    border-bottom:1px solid #6b5b2a;
-    cursor:pointer;
-    font-size:0.9rem;
-  ">
-    Copiar Pix
-  </button>
+      <div id="pix" class="pix-box">
+        <p style="margin-bottom:8px;">
+          Este espaço é sustentado por quem passa por ele.
+        </p>
 
-  <p id="pix-msg" style="
-    display:none;
-    margin-top:8px;
-    font-size:0.8rem;
-    color:#777;
-  ">
-    Pix copiado
-  </p>
-</div>
+        <p style="margin-bottom:10px;">
+          Pix: <strong id="pix-chave">jobafe.jbf@gmail.com</strong>
+        </p>
+
+        <button class="pix-btn" onclick="copiarPix()">Copiar Pix</button>
+
+        <p id="pix-msg" class="pix-msg">Pix copiado</p>
+      </div>
+    </div>
 
     <!-- Música -->
     <div class="music">
