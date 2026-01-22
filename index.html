@@ -39,4 +39,114 @@
 
     .capa {
       display: block;
-      width:
+      width: 100%;
+      max-width: 240px;
+      margin: 22px auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .capa:hover {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+
+    .download {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #6b5b2a;
+      border-bottom: 1px solid #6b5b2a;
+      padding-bottom: 2px;
+      font-size: 0.95rem;
+    }
+
+    .download:hover {
+      opacity: 0.7;
+    }
+
+    .music {
+      margin-top: 22px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .music button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin-top: 6px;
+      font-size: 0.9rem;
+      font-family: inherit;
+      color: #555;
+      border-bottom: 1px solid #555;
+      cursor: pointer;
+    }
+
+    .music button:hover {
+      opacity: 0.7;
+    }
+
+    .player {
+      margin-top: 14px;
+      display: none;
+    }
+
+    .flor {
+      display: block;
+      margin: 24px auto 0 auto;
+      max-width: 60px;
+      opacity: 0.7;
+    }
+  </style>
+
+  <script>
+    function tocarMusica() {
+      const player = document.getElementById("spotify-player");
+      player.style.display = player.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="card">
+    <p>Existe um lugar entre o presente e o eterno.</p>
+    <p>Este espaço não explica.<br>Ele permanece.</p>
+
+    <!-- CAPA DO PDF -->
+    <a href="fragmentos-de-vigilia.pdf" download>
+      <img 
+        src="fragmentos-de-vigilia.png" 
+        alt="Capa do PDF Fragmentos de Vigília"
+        class="capa"
+      >
+    </a>
+
+    <a href="fragmentos-de-vigilia.pdf" download class="download">
+      Baixar o PDF — Fragmentos de Vigília
+    </a>
+
+    <div class="music">
+      <p>Se quiser, uma música pode acompanhar.</p>
+
+      <button onclick="tocarMusica()">Ouvir aqui</button>
+
+      <div class="player" id="spotify-player">
+        <iframe
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/7Ibl1530yAw2HICNzToxJH"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allow="encrypted-media"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <img src="Flor.png" alt="" class="flor">
+  </div>
+
+</body>
+</html>
