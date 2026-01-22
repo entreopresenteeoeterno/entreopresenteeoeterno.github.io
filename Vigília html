@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fragmentos de vigília</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #faf8f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2e2a26;
+    }
+
+    .card {
+      max-width: 420px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      margin-bottom: 6px;
+    }
+
+    .sub {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 22px;
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    p {
+      margin-bottom: 18px;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .download {
+      display: inline-block;
+      text-decoration: none;
+      color: #6b5b2a;
+      border-bottom: 1px solid #6b5b2a;
+      padding-bottom: 2px;
+    }
+
+    .download:hover {
+      opacity: 0.7;
+    }
+
+    .voltar {
+      display: block;
+      margin-top: 28px;
+      font-size: 0.85rem;
+      color: #888;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Fragmentos de vigília</h1>
+    <div class="sub">Textos entre o presente e o eterno</div>
+
+    <img src="fragmentos-de-vigilia.png" alt="Capa do PDF Fragmentos de vigília">
+
+    <p>
+      Este PDF reúne fragmentos que não couberam no livro,
+      mas pediram permanência.
+    </p>
+
+    <a
+      href="fragmentos-de-vigilia.pdf"
+      class="download"
+      download
+    >
+      Baixar o PDF
+    </a>
+
+    <a href="index.html" class="voltar">Voltar ao lugar</a>
+  </div>
+
+</body>
+</html>
