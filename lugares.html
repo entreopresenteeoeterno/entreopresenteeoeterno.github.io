@@ -17,7 +17,7 @@
 
     .place {
       max-width: 520px;
-      margin: 0 auto 60px auto;
+      margin: 0 auto 64px auto;
     }
 
     img {
@@ -38,56 +38,97 @@
       font-size: 0.95rem;
       color: #555;
       border-bottom: 1px dotted #999;
+      cursor: pointer;
     }
 
-    .sample {
+    details {
+      margin-top: 14px;
+    }
+
+    summary {
+      list-style: none;
+      outline: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .corredor {
       margin-top: 16px;
-      padding: 16px;
+      padding: 18px;
       background: #efece5;
       text-align: left;
       font-size: 0.9rem;
       line-height: 1.6;
+    }
+
+    .nav {
+      margin-top: 40px;
+    }
+
+    .nav a {
+      color: #777;
+      font-size: 0.9rem;
+      border-bottom: none;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- LIVRO 1 — PORTA DOS FUNDOS -->
   <div class="place">
-    <img src="./Capa.png" alt="Livro amarelo">
+    <img src="./Capa.png" alt="O lugar que existe entre o presente e o eterno">
     <p><strong>O lugar que existe entre o presente e o eterno</strong></p>
-    <a href="https://a.co/d/3nma5CZ" target="_blank">Ver na Amazon</a><br>
-    <a href="amostra.html" class="quiet">Quarto dos fundos</a>
+
+    <p>
+      <a href="https://a.co/d/3nma5CZ" target="_blank">Ver na Amazon</a>
+    </p>
+
+    <p>
+      <a href="amostra.html" class="quiet">Quarto dos fundos</a>
+    </p>
   </div>
 
+  <!-- LIVRO 2 — CORREDOR -->
   <div class="place">
     <img src="./um-lugar-para-ficar-capa.jpg" alt="Um Lugar para Ficar">
     <p><strong>Um Lugar para Ficar</strong></p>
 
-    <p class="quiet">
-      Significava apenas<br>
-      não ir embora hoje.
-    </p>
+    <details>
+      <summary class="quiet">
+        Significava apenas<br>
+        não ir embora hoje.
+      </summary>
 
-    <div class="sample">
-      Ao entrar, não havia anúncio.<br>
-      Nenhuma promessa explícita.<br><br>
+      <div class="corredor">
+        Ao entrar, não havia anúncio.<br>
+        Nenhuma promessa explícita.<br><br>
 
-      Os dias se repetiam sem exigir decisão.<br>
-      A casa sustentava.<br>
-      A cidade não empurrava.<br><br>
+        Os dias se repetiam sem exigir decisão.<br>
+        A casa sustentava.<br>
+        A cidade não empurrava.<br><br>
 
-      Nesse espaço entre o partir e o chegar,<br>
-      a vida não pedia resposta imediata.<br>
-      Apenas presença.
-    </div>
+        Nesse espaço entre o partir e o chegar,<br>
+        a vida não pedia resposta imediata.<br>
+        Apenas presença.<br><br>
+
+        Permanecer, naquele tempo,<br>
+        não significava escolher para sempre.<br>
+        Significava apenas<br>
+        não ir embora hoje.
+      </div>
+    </details>
 
     <p style="margin-top:16px;">
       <a href="https://a.co/d/7muETxx" target="_blank">Ver na Amazon</a>
     </p>
   </div>
 
-  <p><a href="index.html">Voltar para a floresta</a></p>
+  <div class="nav">
+    <a href="index.html">Voltar para a floresta</a>
+  </div>
 
 </body>
 </html>
