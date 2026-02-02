@@ -89,4 +89,221 @@
     .action-btn {
       margin-top: 8px;
       background: none;
-      border:
+      border: none;
+      font-family: inherit;
+      color: #6b5b2a;
+      border-bottom: 1px solid #6b5b2a;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .msg {
+      display: none;
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .music {
+      margin-bottom: 36px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .music button {
+      background: none;
+      border: none;
+      font-family: inherit;
+      color: #555;
+      border-bottom: 1px solid #555;
+      cursor: pointer;
+    }
+
+    .player {
+      display: none;
+      margin-top: 14px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <script>
+    function tocarMusica() {
+      const p = document.getElementById("player");
+      p.style.display = p.style.display === "block" ? "none" : "block";
+    }
+
+    function abrirPix() {
+      const box = document.getElementById("pix");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+
+    function copiarPix() {
+      const texto = document.getElementById("pix-chave").innerText;
+      navigator.clipboard.writeText(texto);
+      const msg = document.getElementById("pix-msg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    }
+
+    function abrirEncontros() {
+      const box = document.getElementById("encontros");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+
+    function abrirCorredor() {
+      const box = document.getElementById("corredor");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="space">
+
+    <!-- Fragmentos de Vigília -->
+    <div class="place">
+      <img src="fragmentos-de-vigilia.png" alt="Fragmentos de vigília">
+      <p>
+        <strong>Fragmentos de vigília</strong><br>
+        Textos entre o presente e o eterno
+      </p>
+      <a href="fragmentos-de-vigilia.pdf" class="link" download>
+        Baixar o PDF
+      </a>
+    </div>
+
+    <!-- Livro 1 -->
+    <div class="place">
+      <img src="Capa.png" alt="O lugar que existe entre o presente e o eterno">
+      <p>
+        <strong>O lugar que existe entre o presente e o eterno</strong>
+      </p>
+
+      <a href="https://a.co/d/3nma5CZ" target="_blank" class="link">
+        Ver na Amazon
+      </a>
+
+      <br>
+
+      <a href="amostra.html" class="quiet-link">
+        Se quiser permanecer um pouco mais, alguns trechos estão abertos no quarto dos fundos.
+      </a>
+    </div>
+
+    <!-- Livro 2 — O CORREDOR -->
+    <div class="place">
+      <img src="Um Lugar para Ficar Capa.jpg" alt="Um Lugar para Ficar">
+      <p>
+        <strong>Um Lugar para Ficar</strong>
+      </p>
+
+      <a class="quiet-link" onclick="abrirCorredor()">
+        Significava apenas<br>
+        não ir embora hoje.
+      </a>
+
+      <div id="corredor" class="reveal-box">
+        <p style="line-height:1.6;">
+          Chegar foi necessidade.<br>
+          Ficar foi algo que aconteceu aos poucos.<br><br>
+
+          Não houve anúncio.<br>
+          Ninguém disse que ficaríamos.<br><br>
+
+          Quando a vida não oferece garantias,<br>
+          ela oferece algo mais simples:<br>
+          a chance de permanecer.<br><br>
+
+          Permanecer, naquele momento,<br>
+          não significava escolher para sempre.<br>
+          Significava apenas<br>
+          não ir embora hoje.
+        </p>
+      </div>
+
+      <a href="https://a.co/d/7muETxx" target="_blank" class="link" style="margin-top:14px;">
+        Ver na Amazon
+      </a>
+    </div>
+
+    <!-- Encontros -->
+    <div class="place">
+      <p><strong>Encontros</strong></p>
+
+      <p>
+        Às vezes, o livro pede presença.<br>
+        Um espaço de escuta, silêncio e partilha.
+      </p>
+
+      <p>
+        Não é terapia.<br>
+        Não é religião.<br>
+        É um lugar para estar.
+      </p>
+
+      <p>
+        Os encontros acontecem de forma simples,<br>
+        em pequenos grupos,<br>
+        quando há pedido e possibilidade.
+      </p>
+
+      <a class="link" onclick="abrirEncontros()">Manifestar interesse</a>
+
+      <div id="encontros" class="reveal-box">
+        <a href="https://wa.me/qr/HXA2AXD4TPAXJ1" target="_blank" class="link">
+          Abrir conversa no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Apoio com Pix -->
+    <div class="place">
+      <a class="link" onclick="abrirPix()">Apoiar este espaço</a>
+
+      <div id="pix" class="reveal-box">
+        <p style="margin-bottom:10px;">
+          Este espaço existe porque alguém sustenta.<br>
+          Se fizer sentido pra você.
+        </p>
+
+        <p style="margin-bottom:10px;">
+          Pix: <strong id="pix-chave">jobafe.jbf@gmail.com</strong>
+        </p>
+
+        <button class="action-btn" onclick="copiarPix()">Copiar Pix</button>
+        <p id="pix-msg" class="msg">Pix copiado</p>
+      </div>
+    </div>
+
+    <!-- Música -->
+    <div class="music">
+      <p>Se quiser, uma música pode acompanhar.</p>
+      <button onclick="tocarMusica()">Ouvir música</button>
+
+      <div class="player" id="player">
+        <iframe
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/7Ibl1530yAw2HICNzToxJH"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allow="encrypted-media">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Voltar -->
+    <div class="nav">
+      <a href="index.html">Voltar ao início</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
