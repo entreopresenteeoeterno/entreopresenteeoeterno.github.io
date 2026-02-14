@@ -19,7 +19,6 @@
     fbq('init', '1137816852916481');
     fbq('track', 'PageView');
   </script>
-
   <noscript>
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1137816852916481&ev=PageView&noscript=1"/>
@@ -32,111 +31,76 @@
       font-family: Georgia, "Times New Roman", serif;
       background-color: #faf8f2;
       color: #2e2a26;
-      line-height: 1.7;
+      text-align: center;
+      line-height: 1.6;
     }
 
     .container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 48px 24px;
-    }
-
-    .intro {
-      margin-bottom: 48px;
-      font-size: 1.05rem;
-    }
-
-    .book {
-      background: linear-gradient(to bottom, #f3e7c2, #e3c977);
-      padding: 40px 32px;
-      margin-bottom: 64px;
+      padding: 60px 24px;
     }
 
     .capa {
-      display: block;
-      max-width: 220px;
-      margin: 0 auto 32px auto;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      max-width: 260px;
+      margin-bottom: 40px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
     }
 
-    .book h1 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
+    h1 {
+      font-size: 1.8rem;
       font-weight: normal;
+      margin-bottom: 10px;
     }
 
-    .book p {
-      margin-bottom: 16px;
+    .subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #555;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 12px;
-      padding-bottom: 2px;
-      text-decoration: none;
-      color: #2e2a26;
-      border-bottom: 1px solid #2e2a26;
-    }
-
-    .button:hover {
-      opacity: 0.7;
-    }
-
-    .sample {
-      margin-top: 64px;
-      margin-bottom: 64px;
-    }
-
-    .sample h2 {
-      font-size: 1.3rem;
-      margin-bottom: 36px;
-      font-weight: normal;
-    }
-
-    .chapter {
-      margin-bottom: 48px;
-    }
-
-    .chapter h3 {
+    .forwho {
+      text-align: left;
+      margin: 40px auto;
+      max-width: 520px;
       font-size: 1rem;
-      font-weight: normal;
-      margin-bottom: 16px;
-      color: #444;
     }
 
-    .chapter p {
-      margin-bottom: 16px;
+    .forwho ul {
+      padding-left: 20px;
     }
 
-    .support {
-      margin-top: 64px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .support a {
-      color: #555;
+    .cta-button {
+      display: inline-block;
+      margin: 40px 0;
+      padding: 16px 32px;
+      background-color: #2e2a26;
+      color: #ffffff;
       text-decoration: none;
-      border-bottom: 1px solid #555;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: 0.3s;
     }
 
-    .support a:hover {
-      opacity: 0.7;
+    .cta-button:hover {
+      background-color: #000000;
     }
 
-    .back {
-      margin-top: 56px;
-      font-size: 0.9rem;
+    .excerpt {
+      margin-top: 60px;
+      font-size: 1rem;
+      font-style: italic;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .back a {
-      text-decoration: none;
-      color: #555;
+    .final {
+      margin-top: 60px;
+      font-size: 1.1rem;
     }
 
-    .back a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 
@@ -144,43 +108,39 @@
 
   <div class="container">
 
-    <div class="intro">
-      <p>
-        Este livro nasceu do mesmo lugar que este site.<br>
-        Ele não ensina.<br>
-        Ele oferece um lugar para ficar.
-      </p>
+    <img src="Capa.png" alt="Capa do livro" class="capa">
+
+    <h1>O lugar que existe entre o presente e o eterno</h1>
+
+    <div class="subtitle">
+      Um livro sobre permanência, tempo e presença.
     </div>
 
-    <div class="book">
-
-      <img
-        src="Capa.png"
-        alt="Capa do livro O lugar que existe entre o presente e o eterno"
-        class="capa"
-      />
-
-      <h1>O lugar que existe entre o presente e o eterno</h1>
-
-      <p>
-        Um livro sobre infância, ausência e memória.<br>
-        Sobre viver antes de saber.<br>
-        Sobre a presença silenciosa do que não ficou.
-      </p>
-
-      <p>Disponível em formato físico e digital.</p>
-
-      <a
-        href="https://a.co/d/47yy9Dc"
-        target="_blank"
-        class="button"
-      >
-        Comprar na Amazon
-      </a>
-
+    <div class="forwho">
+      <strong>Para quem:</strong>
+      <ul>
+        <li>atravessou uma perda</li>
+        <li>precisa ler devagar</li>
+        <li>sente que nem tudo precisa ser resolvido</li>
+        <li>busca presença, não explicação</li>
+      </ul>
     </div>
 
-    <!-- resto do seu código permanece igual -->
+    <a href="https://a.co/d/47yy9Dc"
+       target="_blank"
+       class="cta-button"
+       onclick="fbq('track', 'InitiateCheckout');">
+      Comprar agora na Amazon
+    </a>
+
+    <div class="excerpt">
+      “Cresci cercado de ruídos simples e de um silêncio profundo. 
+      Um silêncio que moldou minhas percepções antes mesmo que eu tivesse consciência delas.”
+    </div>
+
+    <div class="final">
+      Se fizer sentido, ele encontra você.
+    </div>
 
   </div>
 
