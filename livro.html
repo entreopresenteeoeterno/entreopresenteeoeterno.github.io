@@ -5,6 +5,27 @@
   <title>O lugar que existe entre o presente e o eterno</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1137816852916481');
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1137816852916481&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     body {
       margin: 0;
@@ -17,66 +38,105 @@
     .container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 60px 24px;
-      text-align: center;
+      padding: 48px 24px;
+    }
+
+    .intro {
+      margin-bottom: 48px;
+      font-size: 1.05rem;
+    }
+
+    .book {
+      background: linear-gradient(to bottom, #f3e7c2, #e3c977);
+      padding: 40px 32px;
+      margin-bottom: 64px;
     }
 
     .capa {
-      max-width: 260px;
-      margin-bottom: 40px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+      display: block;
+      max-width: 220px;
+      margin: 0 auto 32px auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
 
-    h1 {
-      font-size: 1.8rem;
+    .book h1 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
       font-weight: normal;
+    }
+
+    .book p {
       margin-bottom: 16px;
     }
 
-    .subtitle {
-      font-size: 1.1rem;
-      margin-bottom: 40px;
-    }
-
-    .who {
-      text-align: left;
-      max-width: 520px;
-      margin: 0 auto 50px auto;
-      font-size: 1rem;
-    }
-
-    .who p {
-      margin: 8px 0;
-    }
-
-    .cta-button {
+    .button {
       display: inline-block;
-      padding: 16px 28px;
-      background-color: #2e2a26;
-      color: #faf8f2;
+      margin-top: 12px;
+      padding-bottom: 2px;
       text-decoration: none;
-      font-size: 1rem;
-      margin-bottom: 60px;
-      transition: all 0.3s ease;
+      color: #2e2a26;
+      border-bottom: 1px solid #2e2a26;
     }
 
-    .cta-button:hover {
-      background-color: #000;
+    .button:hover {
+      opacity: 0.7;
     }
 
-    .excerpt {
-      text-align: left;
-      max-width: 520px;
-      margin: 0 auto 60px auto;
+    .sample {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+
+    .sample h2 {
+      font-size: 1.3rem;
+      margin-bottom: 36px;
+      font-weight: normal;
+    }
+
+    .chapter {
+      margin-bottom: 48px;
+    }
+
+    .chapter h3 {
       font-size: 1rem;
+      font-weight: normal;
+      margin-bottom: 16px;
       color: #444;
     }
 
-    .closing {
-      font-style: italic;
-      margin-top: 40px;
+    .chapter p {
+      margin-bottom: 16px;
     }
 
+    .support {
+      margin-top: 64px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .support a {
+      color: #555;
+      text-decoration: none;
+      border-bottom: 1px solid #555;
+    }
+
+    .support a:hover {
+      opacity: 0.7;
+    }
+
+    .back {
+      margin-top: 56px;
+      font-size: 0.9rem;
+    }
+
+    .back a {
+      text-decoration: none;
+      color: #555;
+    }
+
+    .back a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -84,32 +144,45 @@
 
   <div class="container">
 
-    <img src="Capa.png" 
-         alt="Capa do livro O lugar que existe entre o presente e o eterno" 
-         class="capa">
-
-    <h1>O lugar que existe entre o presente e o eterno</h1>
-
-    <div class="subtitle">
-      Um livro sobre permanência, tempo e presença.
-    </div>
-
-    <div class="who">
-      <p>Para quem atravessou uma perda.</p>
-      <p>Para quem precisa ler devagar.</p>
-      <p>Para quem sente que nem tudo precisa ser resolvido.</p>
-      <p>Para quem prefere presença a explicação.</p>
-    </div>
-
-    <a href="https://a.co/d/47yy9Dc"
-       target="_blank"
-       class="cta-button">
-       Comprar na Amazon
-    </a>
-
-    <div class="excerpt">
+    <div class="intro">
       <p>
-        Cresci cercado de ruídos simples e de um silêncio profundo. 
-        Um silêncio que moldou minhas percepções antes mesmo que eu tivesse consciência delas. 
-        Só anos mais tarde entendi que esse silêncio não era vazio: 
-        era memória. Era
+        Este livro nasceu do mesmo lugar que este site.<br>
+        Ele não ensina.<br>
+        Ele oferece um lugar para ficar.
+      </p>
+    </div>
+
+    <div class="book">
+
+      <img
+        src="Capa.png"
+        alt="Capa do livro O lugar que existe entre o presente e o eterno"
+        class="capa"
+      />
+
+      <h1>O lugar que existe entre o presente e o eterno</h1>
+
+      <p>
+        Um livro sobre infância, ausência e memória.<br>
+        Sobre viver antes de saber.<br>
+        Sobre a presença silenciosa do que não ficou.
+      </p>
+
+      <p>Disponível em formato físico e digital.</p>
+
+      <a
+        href="https://a.co/d/47yy9Dc"
+        target="_blank"
+        class="button"
+      >
+        Comprar na Amazon
+      </a>
+
+    </div>
+
+    <!-- resto do seu código permanece igual -->
+
+  </div>
+
+</body>
+</html>
