@@ -58,7 +58,22 @@
       color: #555;
     }
 
-    /* BOTÃO AURA AMARELA */
+    .btn {
+      display: inline-block;
+      margin: 10px 6px;
+      padding: 10px 18px;
+      background: #e3c977;
+      color: #2e2a26;
+      border-radius: 999px;
+      text-decoration: none;
+      border-bottom: none;
+      font-size: 0.9rem;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
     .aura {
       display: inline-block;
       margin-top: 32px;
@@ -70,10 +85,6 @@
       text-decoration: none;
       box-shadow: 0 0 0 6px rgba(227,201,119,0.25);
       border-bottom: none;
-    }
-
-    .aura:hover {
-      opacity: 0.85;
     }
 
     .music {
@@ -105,9 +116,8 @@
     <p>Textos entre o presente e o eterno</p>
 
     <p>
-      <a href="fragmentos-de-vigilia.pdf" download>
-        Baixar o PDF
-      </a>
+      <a href="vigilia.html" class="btn">Ler online</a>
+      <a href="fragmentos-de-vigilia.pdf" download class="btn">Baixar PDF</a>
     </p>
   </div>
 
@@ -154,7 +164,6 @@
       Pix: <strong>jobafe.jbf@gmail.com</strong>
     </div>
 
-    <!-- QUEM ESCREVE -->
     <a href="quem-escreve.html" class="aura">
       Quem escreve
     </a>
@@ -173,7 +182,6 @@
     </iframe>
   </div>
 
-  <!-- VOLTAR -->
   <div class="nav">
     <a href="index.html">Voltar para a floresta</a>
   </div>
