@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Lugares</title>
+  <title>Lugares — Entre o presente e o eterno</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -34,20 +34,39 @@
       margin: 12px 0;
     }
 
-    a {
-      color: #6b5b2a;
+    .buttons {
+      margin-top: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 0.95rem;
       text-decoration: none;
+    }
+
+    .read {
+      background: #2e2a26;
+      color: #ffffff;
+    }
+
+    .download {
+      color: #6b5b2a;
       border-bottom: 1px solid #6b5b2a;
     }
 
-    a:hover {
-      opacity: 0.7;
+    .read:hover,
+    .download:hover {
+      opacity: 0.85;
     }
 
     .quiet {
       font-size: 0.95rem;
       color: #555;
       border-bottom: 1px dotted #999;
+      text-decoration: none;
     }
 
     .support {
@@ -56,22 +75,6 @@
       background: #efece5;
       font-size: 0.9rem;
       color: #555;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px 6px;
-      padding: 10px 18px;
-      background: #e3c977;
-      color: #2e2a26;
-      border-radius: 999px;
-      text-decoration: none;
-      border-bottom: none;
-      font-size: 0.9rem;
-    }
-
-    .btn:hover {
-      opacity: 0.85;
     }
 
     .aura {
@@ -84,7 +87,10 @@
       font-size: 0.9rem;
       text-decoration: none;
       box-shadow: 0 0 0 6px rgba(227,201,119,0.25);
-      border-bottom: none;
+    }
+
+    .aura:hover {
+      opacity: 0.85;
     }
 
     .music {
@@ -101,7 +107,7 @@
     .nav a {
       color: #777;
       font-size: 0.9rem;
-      border-bottom: none;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -110,20 +116,32 @@
 
   <!-- FRAGMENTOS DE VIGÍLIA -->
   <div class="place">
-    <img src="./fragmentos-de-vigilia.png" alt="Fragmentos de vigília">
+    <img src="fragmentos-de-vigilia.png" alt="Fragmentos de vigília">
 
     <p><strong>Fragmentos de vigília</strong></p>
     <p>Textos entre o presente e o eterno</p>
 
     <p>
-      <a href="vigilia.html" class="btn">Ler online</a>
-      <a href="fragmentos-de-vigilia.pdf" download class="btn">Baixar PDF</a>
+      Este PDF reúne fragmentos que não couberam no livro,
+      mas pediram permanência.
     </p>
+
+    <div class="buttons">
+      <!-- LER ONLINE: ABRE O PDF DIRETO -->
+      <a href="fragmentos-de-vigilia.pdf" target="_blank" class="button read">
+        Ler online
+      </a>
+
+      <!-- BAIXAR PDF -->
+      <a href="fragmentos-de-vigilia.pdf" download class="button download">
+        Baixar PDF
+      </a>
+    </div>
   </div>
 
   <!-- LIVRO 1 -->
   <div class="place">
-    <img src="./Capa.png" alt="O lugar que existe entre o presente e o eterno">
+    <img src="Capa.png" alt="O lugar que existe entre o presente e o eterno">
 
     <p><strong>O lugar que existe entre o presente e o eterno</strong></p>
 
@@ -142,7 +160,7 @@
 
   <!-- LIVRO 2 -->
   <div class="place">
-    <img src="./um-lugar-para-ficar-capa.jpg" alt="Um Lugar para Ficar">
+    <img src="um-lugar-para-ficar-capa.jpg" alt="Um Lugar para Ficar">
 
     <p><strong>Um Lugar para Ficar</strong></p>
 
@@ -182,6 +200,7 @@
     </iframe>
   </div>
 
+  <!-- VOLTAR -->
   <div class="nav">
     <a href="index.html">Voltar para a floresta</a>
   </div>
