@@ -1,105 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Fragmentos de vigília</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Fragmentos de vigília</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Georgia, "Times New Roman", serif;
-    }
+<style>
+body{
+  background:#faf8f2;
+  font-family: Georgia, "Times New Roman", serif;
+  text-align:center;
+  color:#2e2a26;
+}
 
-    body{
-      background:#faf8f2;
-      color:#2e2a26;
-      text-align:center;
-    }
+.card{
+  max-width:520px;
+  margin:60px auto;
+}
 
-    .card{
-      max-width:520px;
-      margin:40px auto 20px auto;
-      padding:24px;
-    }
+img{
+  max-width:260px;
+  margin-bottom:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.2);
+}
 
-    h1{
-      font-size:1.4rem;
-      font-weight:normal;
-      margin-bottom:6px;
-    }
+.button{
+  display:inline-block;
+  margin:12px;
+  padding:12px 22px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:1rem;
+}
 
-    .sub{
-      font-size:0.9rem;
-      color:#777;
-      margin-bottom:22px;
-    }
+.download{
+  color:#6b5b2a;
+  border-bottom:1px solid #6b5b2a;
+}
 
-    img{
-      max-width:260px;
-      margin-bottom:18px;
-      box-shadow:0 8px 24px rgba(0,0,0,0.2);
-    }
-
-    p{
-      margin-bottom:18px;
-      line-height:1.6;
-      font-size:0.95rem;
-    }
-
-    .download{
-      display:inline-block;
-      text-decoration:none;
-      color:#6b5b2a;
-      border-bottom:1px solid #6b5b2a;
-      padding-bottom:2px;
-      margin-bottom:28px;
-    }
-
-    .download:hover{
-      opacity:0.7;
-    }
-
-    iframe{
-      width:100%;
-      height:80vh;
-      border:none;
-      margin-top:20px;
-    }
-
-    .voltar{
-      display:block;
-      margin-top:28px;
-      font-size:0.85rem;
-      color:#888;
-      text-decoration:none;
-    }
-  </style>
+.read{
+  background:#2e2a26;
+  color:white;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="card">
-    <h1>Fragmentos de vigília</h1>
-    <div class="sub">Textos entre o presente e o eterno</div>
+<div class="card">
 
-    <img src="fragmentos-de-vigilia.png" alt="Capa do PDF Fragmentos de vigília">
+<h1>Fragmentos de vigília</h1>
+<p>Textos entre o presente e o eterno</p>
 
-    <p>
-      Este PDF reúne fragmentos que não couberam no livro,
-      mas pediram permanência.
-    </p>
+<img src="fragmentos-de-vigilia.png">
 
-    <a href="fragmentos-de-vigilia.pdf" class="download" download>
-      Baixar o PDF
-    </a>
+<p>Este PDF reúne fragmentos que não couberam no livro,
+mas pediram permanência.</p>
 
-    <iframe src="fragmentos-de-vigilia.pdf"></iframe>
+<a href="fragmentos-de-vigilia.pdf" download class="button download">
+Baixar PDF
+</a>
 
-    <a href="index.html" class="voltar">Voltar ao lugar</a>
-  </div>
+<a href="vigilia-leitura.html" class="button read">
+Ler online
+</a>
+
+</div>
 
 </body>
 </html>
