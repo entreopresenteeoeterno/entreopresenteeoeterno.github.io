@@ -253,13 +253,49 @@ que continua vivo em silêncio.<br><br>
     novos encontros poderão acontecer.
   </p>
 
-  <a
-    href="https://wa.me/5527998650019"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="amazon">
-    Manifestar interesse
-  </a>
+  
+<button class="amazon" type="button"
+  onclick="mostrarOpcoes()">
+  Manifestar interesse
+</button>
+
+<div id="opcoes-vigilia" style="display:none;
+  margin-top:20px; text-align:center;">
+
+  <p>Como deseja participar?</p>
+
+  <p><a class="amazon"
+    href="https://wa.me/5527998650019?text=Ol%C3%A1%21%20Gostaria%20de%20participar%20do%20pr%C3%B3ximo%20Tempo%20de%20Vig%C3%ADlia."
+    target="_blank">
+    Quero participar
+  </a></p>
+
+  <p><a class="amazon"
+    href="https://wa.me/5527998650019?text=Ol%C3%A1%21%20Quero%20participar%20do%20Tempo%20de%20Vig%C3%ADlia%20e%20colaborar%20voluntariamente%20via%20Pix."
+    target="_blank">
+    Participar e colaborar com Pix
+  </a></p>
+
+  <p><a class="amazon"
+    href="https://wa.me/5527998650019?text=Ol%C3%A1%21%20Gostaria%20de%20colaborar%20voluntariamente%20via%20Pix%20com%20o%20Tempo%20de%20Vig%C3%ADlia."
+    target="_blank">
+    Apenas colaborar com Pix
+  </a></p>
+
+  <p><small>Participação gratuita.
+  Colaboração voluntária.</small></p>
+</div>
+
+<script>
+function mostrarOpcoes() {
+  const opcoes =
+    document.getElementById("opcoes-vigilia");
+  opcoes.style.display =
+    opcoes.style.display === "none"
+    ? "block" : "none";
+}
+</script>
+
 </div>
 
 
